@@ -13,7 +13,7 @@ from app.main import is_isogram
     ("abcdeFghIjklmnOpqrStuvWxYz", True),
 ])
 def test_is_isogram(word, expected) -> None:
-    assert is_isogram(word) == expected
+    assert is_isogram(word) is expected
 
 
 def test_single_letter() -> None:
