@@ -15,10 +15,12 @@ from app.main import is_isogram
 def test_is_isogram(word, expected):
     assert is_isogram(word) == expected
 
-def test_single_letter():
-    assert is_isogram("a") == True
-    assert is_isogram("Z") == True
 
-def test_repeated_letters_in_long_word():
-    assert is_isogram("subdermatoglyphic") == True
-    assert is_isogram("alphabet") == False
+def test_single_letter() -> None:
+    assert is_isogram("a") is True
+    assert is_isogram("Z") is True
+
+
+def test_repeated_letters_in_long_word() -> None:
+    assert is_isogram("subdermatoglyphic") is True
+    assert is_isogram("alphabet") is False
