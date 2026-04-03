@@ -12,7 +12,7 @@ from app.main import is_isogram
     ("aA", False),
     ("abcdeFghIjklmnOpqrStuvWxYz", True),
 ])
-def test_is_isogram(word, expected):
+def test_is_isogram(word, expected) -> None:
     assert is_isogram(word) == expected
 
 
